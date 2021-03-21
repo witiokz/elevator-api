@@ -1,6 +1,5 @@
 ﻿using ElevatorManagementSystem.Controllers;
 using ElevatorManagementSystem.Domain.Dto;
-using ElevatorManagementSystem.Model;
 using ElevatorManagementSystem.Services;
 using System.Collections.Generic;
 using Xunit;
@@ -9,8 +8,8 @@ namespace ElevatorManagementSystem.Tests
 {
     public class ElevatorControllerTest
     {
-        ElevatorController _controller;
-        IElevatorService _service;
+        readonly ElevatorController _controller;
+        readonly IElevatorService _service;
         public ElevatorControllerTest()
         {
             _service = new ElevatorServiceFake();
